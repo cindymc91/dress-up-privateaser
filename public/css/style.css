@@ -4,7 +4,7 @@ html, body{
 }
 
 #header{
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   background-color: #2F3E4E;
   display : flex; /*Pour aligner les éléments horizontalement*/
   padding : 15px;
@@ -15,7 +15,7 @@ html, body{
   font-family : "Lucida Console", Monaco, monospace;
   font-size : 30px;
   color: #6BD3B8;
-  padding-right : 200px;
+  padding-right : 300px;
 }
 
 #header #slogan{
@@ -23,16 +23,16 @@ html, body{
   color: white;
 }
 
-/*--------------------------------**/
+/*--------------------------------*/
 
 
 #form{
   border-style : groove;
   border-color: white;
-  width: 800px;
+  width: 45%;
   margin : auto;
   padding: 30px;
-  padding-right : 10px;
+  padding-right : 0;
 
 }
 
@@ -67,6 +67,22 @@ html, body{
   zoom: 1.2;
 }
 
-#form .js-option:hover{
-  outline: red;
+#form #compute{
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size:20px;
+  background-color: #2F3E4E;
+  border-style: solid;
+  border-color: #2F3E4E;
+  color: #6BD3B8;
+  font-family : "Lucida Console", Monaco, monospace;
+  border-radius: 12px;
+}
+
+#form #compute:hover{
+  background-color: #586a7c;
+  border-color: #586a7c;
 }
