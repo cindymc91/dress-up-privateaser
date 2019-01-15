@@ -1,0 +1,72 @@
+html, body{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+#header{
+  margin-bottom: 20px;
+  background-color: #2F3E4E;
+  display : flex; /*Pour aligner les éléments horizontalement*/
+  padding : 15px;
+  align-items:center;
+}
+
+#header #title{
+  font-family : "Lucida Console", Monaco, monospace;
+  font-size : 30px;
+  color: #6BD3B8;
+  padding-right : 200px;
+}
+
+#header #slogan{
+  font-size : 18px;
+  color: white;
+}
+
+/*--------------------------------**/
+
+
+#form{
+  border-style : groove;
+  border-color: white;
+  width: 800px;
+  margin : auto;
+  padding: 30px;
+  padding-right : 10px;
+
+}
+
+#form label{
+  font-family : "Lucida Console", Monaco, monospace;
+  font-size : 20px;
+  color: #6BD3B8;
+}
+
+#form input{
+  border-style: none;
+  border-bottom: 2px solid;
+  border-color: grey;
+  font-size : 15px;
+  margin-right: 50px;
+  margin-top : 20px;
+  margin-bottom : 20px;
+  padding-bottom: 5px;
+}
+
+#form input:hover, #form input:focus{
+  border-style: none;
+  border-bottom: 2px solid;
+  border-color:#6BD3B8;
+  font-size : 15px;
+  margin-right: 50px;
+  margin-top : 20px;
+}
+
+#form .js-option{
+  margin-left:30px;
+  zoom: 1.2;
+}
+
+#form .js-option:hover{
+  outline: red;
+}

@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <title>CSS/HTML Workshop with Privateaser</title>
+    <link rel='stylesheet' href='./css/style.css'/>
   </head>
   <body>
-    <div id="bar">
-      <input class="js-name" type="text" placeholder="Bar name"/>
-      <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
-      <input class="js-price-by-person" type="number" placeholder="Price by person"/>
+    <div id="header" >
+      <img src = './css/logo-privateaser.png' height="35" width="35" href="#www.privateaser.com"/>
+      <label id ="title">Privateaser</label>
+      <p id="slogan">Privatisez instantanément un lieu pour votre évènement</p>
     </div>
-    <div id="booker">
-      <input class="js-name" type="text" placeholder="Booker name"/>
-      <input class="js-time" type="number" placeholder="Time in h"/>
-      <input class="js-persons" type="number" placeholder="Persons"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
+
+    <div id="form">
+      <div id="bar">
+        <label>Which bar ?</label><br/>
+        <input class="js-name" type="text" placeholder="Bar name"/>
+        <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
+        <input class="js-price-by-person" type="number" placeholder="Price by person"/>
+      </div>
+      <div id="booker">
+        <label>Who are you ?</label><br/>
+        <input class="js-name" type="text" placeholder="Booker name"/>
+        <input class="js-time" type="number" placeholder="Time in h"/>
+        <input class="js-persons" type="number" placeholder="Persons"/>
+
+        <br/><label>I want to take the deductible option (1€/person)</label>
+        <input class="js-option" type="checkbox" placeholder="Deductible option"/>
+      </div>
+      <button id="compute">Compute</button>
+      <div id="actors"></div>
+  </div>
     <script src="privateaser.js"></script>
     <script src="index.js"></script>
   </body>
