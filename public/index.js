@@ -7,17 +7,36 @@
     const div = document.createElement('div');
     const template = actors.map(actor => {
       return `
-        <div class="actor">
-          <span>${actor.who}</span>
-          <span>${actor.type}</span>
-          <span>${actor.amount}</span>
+        <div class="actor"
+        style = '
+        font-family : "Lucida Console", Monaco, monospace;
+        font-size : 15px;
+        '>
+          <span
+          style = '
+          color:#6BD3B8;
+          text-transform: uppercase;
+          font-weight: bold;
+          '>
+          ${actor.who} -> </span>
+          <span
+          style = '
+          text-transform: capitalize;
+          '>
+          ${actor.type}</span>
+          <span
+          style = '
+          color:red;
+          '>
+          ${actor.amount}</span>
+          </br></br>
         </div>
       `;
     }).join('');
 
     div.innerHTML = template;
     fragment.appendChild(div);
-    document.querySelector('#actors').innerHTML = '';
+    document.querySelector('#actors').innerHTML = ' ';
     document.querySelector('#actors').appendChild(fragment);
   };
 

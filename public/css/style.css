@@ -27,12 +27,13 @@ html, body{
 
 
 #form{
-  border-style : groove;
-  border-color: white;
+  border-style : solid;
+  border-color: #a5a8aa;
   width: 45%;
   margin : auto;
   padding: 30px;
   padding-right : 0;
+  border-radius: 8px;
 
 }
 
@@ -85,4 +86,32 @@ html, body{
 #form #compute:hover{
   background-color: #586a7c;
   border-color: #586a7c;
+}
+
+#payment-info{
+  /*border-style : solid;*/
+  /*border-color: #a5a8aa;*/
+  width: 45%;
+  margin : auto;
+  padding: 30px;
+  padding-right : 0;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#actors{
+  /*border-style : solid;*/
+  /*border-color: #a5a8aa;*/
+  width: 45%;
+  margin : auto;
+  padding: 30px;
+  padding-right : 0;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#information-header {
+  font-family : "Lucida Console", Monaco, monospace;
+  font-size : 20px;
+  color: #6BD3B8;
 }
